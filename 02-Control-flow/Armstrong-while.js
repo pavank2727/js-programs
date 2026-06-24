@@ -31,12 +31,24 @@ export function getExponential(base, power) {
   }
   return expoValue;
 }
-console.log(getExponential(2,3));
+function getSum(num) {
+  let sum = 0;
+  let numbers = getNumbers(num);
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
 
+export function isArmstrongNumber(num) {
+  let numbers = getNumbers(num);
+  let length = getLength(num);
+  let sum = 0;
+  for (let number of numbers) {
+    const exponentialValue = getExponential(number, length);
+    sum += exponentialValue;
+  }
 
-// function getSum(num){
-
-// let sum=0;
-
-// for()
-// }
+  
+  return sum === num;
+}
