@@ -1,0 +1,18 @@
+const user = {
+  name: "Pavan",
+  age: 25,
+  city: "Bangalore",
+};
+
+function checkKey(obj, searchKey) {
+  for (let key in obj) {
+    if (key === searchKey) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+console.log(checkKey(user, "age"));     // true
+console.log(checkKey(user, "email"));   // false

@@ -1,0 +1,25 @@
+const obj1 = {
+  name: "Pavan",
+  age: 25,
+};
+
+const obj2 = {
+  city: "Bangalore",
+  job: "Developer",
+};
+
+// using spread operator
+const mergedObject = { ...obj1, ...obj2 };
+console.log(mergedObject);
+
+//using for in method
+let mergedObj = {};
+for (let key in obj1) {
+  mergedObj[key] = obj1[key];
+}
+
+for (let key in obj2) {
+  mergedObj[key] = obj2[key];
+}
+
+console.log(mergedObj);

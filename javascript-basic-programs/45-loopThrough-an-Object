@@ -1,0 +1,11 @@
+const student = {
+  firstName: "Kamal",
+  lastName: "Krishna",
+  roll: 76,
+  marks: 99,
+};
+
+for (let key in student) {
+  let value = student[key];
+  console.log(`${key}-${value}`);
+}

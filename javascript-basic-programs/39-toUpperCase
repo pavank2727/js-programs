@@ -1,0 +1,6 @@
+function toUpper(str) {
+  const upper = str.charAt(0).toUpperCase()+str.slice(1);
+  return upper;
+}
+const result = toUpper("hello");
+console.log(result);

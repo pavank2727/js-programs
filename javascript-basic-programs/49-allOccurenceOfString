@@ -1,0 +1,13 @@
+const replaceCharacter = (string, oldChar, newChar) => {
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === oldChar) {
+      result = result + newChar;
+    } else {
+      result = result + string[i];
+    }
+  }
+  return result;
+};
+const outPut = replaceCharacter("javascript","a","m");
+console.log(outPut);

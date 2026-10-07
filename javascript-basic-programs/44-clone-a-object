@@ -1,0 +1,18 @@
+const user = {
+  name: "Mani",
+  age: 25,
+  grade: "A",
+};
+
+//using spread
+const cloneObject = { ...user };
+cloneObject.name = "Varun";
+console.log(user);
+console.log(cloneObject);
+
+//using for in
+const cloneUser = {};
+for (let key in user) {
+  cloneUser[key] = user[key];
+}
+console.log(cloneUser);

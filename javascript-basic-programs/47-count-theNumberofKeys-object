@@ -1,0 +1,11 @@
+const student = {
+  name: "Janath",
+  age: 25,
+  city: "Bangalore",
+};
+
+let count=0;
+for (let key in student) {
+  count++;
+}
+console.log(count);

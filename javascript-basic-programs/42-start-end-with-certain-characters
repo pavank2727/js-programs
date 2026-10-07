@@ -1,0 +1,9 @@
+function checkString(str, startChar, endChar) {
+  if (str[0] === startChar && str[str.length - 1] === endChar) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(checkString("JavaScript", "J", "t"));

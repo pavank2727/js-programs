@@ -1,0 +1,8 @@
+const person = {
+  name: "Jagan",
+  age: 56,
+};
+person.city = "bengaluru";
+person["pincode"] = 560343;
+
+console.log(person);
